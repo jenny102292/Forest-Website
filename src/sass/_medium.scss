@@ -1,0 +1,131 @@
+@media (min-width: 768px) {
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+
+		.wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			.nav__list {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+
+				transform: translateX(0);
+
+				.nav__link {
+					padding: 0 4.5rem;
+					font-size: 1.5rem;
+				}
+				.nav__link::before,
+				.nav__link::after {
+					display: none;
+				}
+
+				.active {
+					color: $green-color;
+				}
+
+				.nav__link:first-of-type {
+					color: #fff;
+					background-color: #000;
+				}
+
+				.nav__link:hover {
+					background-color: #000;
+					color: #fff;
+				}
+			}
+		}
+
+		.burger-btn {
+			display: none;
+		}
+	}
+
+	header.hero-img {
+		background-image: url(../img/jungle-1807476_1920.jpg);
+	}
+
+	.aboutus {
+		.wrapper {
+			.aboutus__box {
+				.aboutus__box-img {
+					img {
+						width: 40em;
+					}
+				}
+			}
+		}
+		.aboutus__hero {
+			background-image: url(../img/girl-5785590_1920.jpg);
+
+			.aboutus__hero-text {
+				font-size: 4rem;
+			}
+		}
+	}
+
+	.offer {
+		.wrapper {
+			.offer__cards {
+				display: flex;
+				flex-direction: row;
+
+				.offer__card {
+					padding-bottom: 20px;
+					margin: 0 1rem;
+
+					&-info-list-item,
+					&-info-list-item-minus {
+						padding-bottom: 1rem;
+					}
+					&-info-list img {
+						width: 7%;
+					}
+				}
+			}
+			.more-offers {
+				justify-content: flex-end;
+			}
+		}
+	}
+
+	.footer {
+		.wrapper {
+			.footer__boxes {
+				.footer__box {
+					font-size: 1.5em;
+				}
+			}
+		}
+	}
+
+	.contact {
+		.wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			.form {
+				
+				width: 60vw;
+				.contact-form {
+					padding: 1rem;
+				}
+			}
+
+			.google-map {
+				display: block;
+				margin-left: 1em;
+				padding-top: 5em;
+			}
+		}
+	}
+}

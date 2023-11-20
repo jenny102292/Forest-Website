@@ -1,0 +1,43 @@
+@media (min-width: 576px) {
+	
+	
+	.aboutus {
+		.wrapper {
+			.aboutus__box {
+				display: flex;
+				flex-direction: row;
+				// align-items: center;
+				justify-content: space-between;
+				margin: 2em 0;
+		
+				&-text {
+					margin: 0 1em;
+				}
+			}
+		
+			.aboutus__img {
+				margin-bottom: 1em;
+			}
+		
+			&__title {
+				margin-bottom: 0.5em;
+			}
+		
+			&__text {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.offer {
+		&__cards {
+			.offer__card {
+				
+				
+				&-info h2 {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+}

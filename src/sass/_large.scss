@@ -1,0 +1,36 @@
+@media (min-width: 992px) {
+
+	.aboutus {
+		.wrapper {
+			.aboutus__box {
+				.aboutus__box-text {
+					.aboutus__text {
+						font-size: 15px;
+					}
+
+					.aboutus__title {
+						font-size: 3rem;
+					}
+				}
+			}
+		}
+	}
+
+	.offer {
+		&__cards {
+			justify-content: center;
+
+			.offer__card {
+				margin-right: 30px;
+				
+			}
+		}
+	}
+
+	.contact {
+		.wrapper {
+			display: flex;
+			min-width: 40%;
+		}
+	}
+}

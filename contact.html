@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest</title>
+    <link rel="icon" href="/dist/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <script src="https://kit.fontawesome.com/5643750880.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="nav" id="navId">
+
+        <div class="wrapper">
+            <div class="nav__brand">
+                <a class="nav__brand-logo" href="index.html#home"> <i class="fa-solid fa-tree"></i>Forest
+                </a>
+            </div>
+
+
+            <div class="nav__list">
+                <a class="nav__link" href="index.html#home">Home</a>
+                <a class="nav__link" href="index.html#aboutus">O nas</a>
+                <a class="nav__link" href="index.html#offer">Oferta</a>
+                <a class="nav__link" href="contact.html">Kontakt</a>
+            </div>
+
+            <button class="burger-btn" type="button">
+                <div class="burger-btn__box">
+                    <div class="burger-btn__bars"></div>
+                </div>
+            </button>
+
+        </div>
+    </nav>
+
+
+
+    <section class="contact" id="contact">
+        <div class="wrapper">
+
+            <div class="form">
+                <form class="contact-form">
+                    <h1>Formularz kontaktowy</h1>
+                    <div class="contact-box">
+                        <label for="username">Imię:</label>
+                        <input type="text" id="username" name="name" placeholder="Podaj swoje imię...">
+                        <p class="error-text">Error</p>
+                    </div>
+                    <div class="contact-box">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Twój adres e-mail..." required>
+                        <p class="error-text">Error</p>
+                    </div>
+                    <div class="contact-box">
+                        <label for="msg">Wiadomość:</label>
+                        <textarea name="msg" id="msg" placeholder="Napisz do nas..." required></textarea>
+                        <p class="error-text">Error</p>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="clear">Wyczyść</button>
+                        <button class="send">Wyślij</button>
+                    </div>
+                    <div class="popup">
+                        <p>Wiadomość została wysłana!</p>
+                        <button class="close">Zamknij</button>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898050088892!2d19.89026927576843!3d50.08819561338181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1699287452906!5m2!1spl!2spl"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="wrapper">
+            <div class="footer__boxes">
+                <div class="footer__box">
+                    <h3 class="footer__box-title-brand"><a class="nav__brand" href="#home"> <i
+                                class="fa-solid fa-tree"></i>Forest
+                        </a></h3>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">O nas</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Historia</li>
+                        <li class="footer__box-list-item">Parki</li>
+                        <li class="footer__box-list-item">Opinie</li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">Nasza firma</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Praca</li>
+                        <li class="footer__box-list-item">Kadra</li>
+                        <li class="footer__box-list-item">Zarząd</li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__box-title">Dokumenty</h3>
+                    <ul class="footer__box-list">
+                        <li class="footer__box-list-item">Wnioski</li>
+                        <li class="footer__box-list-item">Rezerwacje</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="footer__bottom-text">
+            &copy;
+            <span class="footer__year">2023</span>
+            Forest Group Company Ltd.
+        </p>
+
+    </footer>
+
+    <script src="/dist/js/script.min.js"></script>
+</body>
+
+</html>
