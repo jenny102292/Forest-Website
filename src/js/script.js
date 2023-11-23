@@ -4,6 +4,7 @@ const main = document.querySelector('main-page')
 const nav = document.querySelector('.nav__list')
 const btn = document.querySelector('.burger-btn')
 const navLogo = document.querySelector('.nav__brand')
+const footerYear = document.querySelector('.footer__year')
 
 const handleScrollspy = () => {
 	if (document.body.classList.contains('main-page')) {
@@ -29,6 +30,12 @@ const closeNav = () => {
 	nav.classList.remove('show')
 }
 
+const currentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
+currentYear()
 window.addEventListener('scroll', handleScrollspy)
 btn.addEventListener('click', showNav)
 navLogo.addEventListener('click', closeNav)
